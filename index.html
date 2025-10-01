@@ -6,19 +6,9 @@
   <title>Crystal KidZ | JSHTM</title>
   <link rel="shortcut icon" href="TemplateData/favicon.ico">
   <link rel="stylesheet" href="TemplateData/style.css">
-  <link rel="stylesheet" href="style.css" class="css">
   <script defer data-domain="crystalkidz.club" src="https://plausible.io/js/script.js"></script> <!--counter-->
 </head>
 <body>
-  <!-- NAVBAR -->
-  <div class="navbar">
-    <div class="logo">
-      <img src="logo.png" alt="logo">
-    </div>
-    <div class="nav-links">
-    </div>
-  </div>
-
   <!-- UNITY CONTAINER -->
   <div id="unity-container" class="unity-desktop">
     <canvas id="unity-canvas" width=1024 height=576 tabindex="-1"></canvas>
@@ -103,16 +93,6 @@
     };
 
     document.body.appendChild(script);
-  </script>
-
-  <!-- Zvuk na logo -->
-  <script>
-    const zvuk = new Audio("krudejzvuk.m4a");
-    const logo = document.querySelector(".logo");
-    logo.addEventListener("click", () => {
-      zvuk.currentTime = 0;
-      zvuk.play();
-    });
   </script>
 </body>
 </html>
