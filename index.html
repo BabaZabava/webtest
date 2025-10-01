@@ -123,5 +123,10 @@
       document.body.appendChild(script);
 
     </script>
+       <script>
+      fetch('https://api.countapi.xyz/hit/jshtmgame/visits')
+        .then(res => res.json())
+        .then(res => console.log("Visitor count:", res.value));
+    </script>
   </body>
 </html>
